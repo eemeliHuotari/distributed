@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service Calculator {
+    rpc Add (Operation) returns (Result);
+    rpc Subtract (Operation) returns (Result);
+}
+
+message Operation {
+    double num1 = 1;
+    double num2 = 2;
+}
+
+message Result {
+    double result = 1;
+}
