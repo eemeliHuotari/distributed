@@ -15,4 +15,4 @@ COPY . /app/
 EXPOSE 50051
 
 # Run the gRPC server
-CMD ["python", "grpc_server.py"]
+CMD ["python", "server.py"]
